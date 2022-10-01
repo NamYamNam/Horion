@@ -8,6 +8,11 @@ private:
 	int delay = 2;
 	int length = 8;
 	std::string message = "Horion - the best minecraft bedrock utility mod - horion.download";
+	std::string message2 = "GET HORION @ horion.download";
+	std::string message3 = "HORION ON TOP!";
+	std::string message4 = "GET DESTROYED BY HORION CLIENT LIKE A LOSER!";
+	std::string message5 = "CHEAT OR GET AN L LIKE YOU - GET HORION CLIENT";
+	std::string message6 = "Horion client, like steroids for Minecraft Bedrock @ horion.download";
 
 public:
 	Spammer();

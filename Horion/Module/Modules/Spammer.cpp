@@ -19,6 +19,11 @@ void Spammer::onTick(C_GameMode* gm) {
 	if (Odelay > delay * 20) {
 		C_TextPacket textPacket;
 		textPacket.message.setText(bypass ? (message + " | " + Utils::randomString(length)) : message);
+		textPacket.message.setText(bypass ? (message2 + " | " + Utils::randomString(length)) : message);
+		textPacket.message.setText(bypass ? (message3 + " | " + Utils::randomString(length)) : message);
+		textPacket.message.setText(bypass ? (message4 + " | " + Utils::randomString(length)) : message);
+		textPacket.message.setText(bypass ? (message5 + " | " + Utils::randomString(length)) : message);
+		textPacket.message.setText(bypass ? (message6 + " | " + Utils::randomString(length)) : message);
 		textPacket.sourceName.setText(g_Data.getLocalPlayer()->getNameTag()->getText());
 		textPacket.xboxUserId = std::to_string(g_Data.getLocalPlayer()->getUserId());
 		g_Data.getClientInstance()->loopbackPacketSender->sendToServer(&textPacket);
